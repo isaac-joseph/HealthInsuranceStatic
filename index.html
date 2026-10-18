@@ -75,7 +75,6 @@
 		<option value="crisis">Hypertensive Crisis</option>
 	</select>
 	
-	<p id="result"></p>
 
 	<section>
 	<h2>Enter your age (18-100):</h2>
@@ -162,6 +161,17 @@
 	<p id="family-history-error"></p>
 	</section>	
 
+  <section id="results">
+    <h2>Your Risk Assessment Results</h2>
+
+    <p id="result" role="status">
+        Enter your information and click Calculate Risk.
+    </p>
+
+    <div id="bmi-result"></div>
+
+    <div id="risk-result"></div>
+</section>
 	<button type="button" onclick="submitAnswer()">Calculate Risk</button>
 
   </main>
