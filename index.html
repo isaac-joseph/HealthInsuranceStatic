@@ -4,9 +4,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Health Insurance Risk Calculator</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Maname&family=Mrs+Saint+Delafield&family=Nothing+You+Could+Do&display=swap" rel="stylesheet">
+
   <style>
     body {
-      font-family: Arial, sans-serif;
+      font-family: 'Nothing You Could Do', ;
       text-align: center;
       background-color: #dadada;
       margin: 0;
@@ -44,6 +49,30 @@
     section {
       margin: 50px 0;
     }
+    h1 {
+    font-size: 52px;
+    }
+
+    h2 {
+    font-size: 30px;
+    }
+
+    h3 {
+    font-size: 35px;
+    }
+
+    p {
+    font-size: 15px;
+    font-weight: normal;
+    }
+
+    label {
+    font-size: 22px;
+    }
+
+    select, input, button {
+    font-size: 17px;
+    }
   </style>
 </head>
 
@@ -55,11 +84,11 @@
   </header>
   
   <main>
-	<h1>This application allows you to enter simple facts about yourself and family history<br>which will be calculated to determine your risk category.</h1>
+	<h3>This application allows users to enter simple facts about themselves and there family history<br>which will be calculated to determine there risk category.</h3>
 
     <section>
-		<h2>Blood pressure is measured using two numbers: systolic and diastolic.</h2>
-		<h2>This table helps us categorize blood pressure using these two numbers.</h2>
+		<h3>Blood pressure is measured using two numbers: systolic and diastolic.</h3>
+		<h3>This table helps us categorize blood pressure using these two numbers.</h3>
 	</section>
 
     <img src="blood-pressure-categories.png" alt="Blood Pressure Graphic" class="blood-pressure-photo">
@@ -139,7 +168,7 @@
 	</section>
 
 	<section>
-		<h2>Please select any disease from your family history:</h2>
+		<h2>Please select any disease from family history:</h2>
 	<label>Family History (select at least one):</label>
 	<div>
     	<input type="checkbox" id="history-none" name="family-history" value="none">
@@ -162,10 +191,10 @@
 	</section>	
 
   <section id="results">
-    <h2>Your Risk Assessment Results</h2>
+    <h2> Risk Assessment Results</h2>
 
     <p id="result" role="status">
-        Enter your information and click Calculate Risk.
+        Enter information and click Calculate Risk.
     </p>
 
     <div id="bmi-result"></div>
